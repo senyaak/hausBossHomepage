@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HausBoss Homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img class="logo-img" src="logo.jpg" height="3em" alt="HausBoss Logo">
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">STARTSEITE</a></li>
+        <li><a href="#services">LEISTUNGEN</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
+      </ul>
+      <button class="burger-menu" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="image-container">
+        <img src="main.png" alt="Background">
+        <div class="side-tab">
+          <h1>PROFESSIONELLER HAUSMEISTERSERVICE AUS NEU-ULM</h1>
+          <h3>ZUVERLÄSSIG, weil die Qualität zählt</h3>
+          <p>
+            Willkommen bei HAUSBOSS - Ihrem kompetenten Partner für Hausmeisterdienste und Gebäudemanagement. Wir bieten Ihnen professionelle Dienstleistungen rund um Ihr Gebäude. Lernen Sie uns kennen und erfahren Sie, wie wir Sie unterstützen können.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="features">
+      <div class="feature">
+        <div class="f-img">
+          <img src="feature-001.png" alt="Feature 1">
+        </div>
+        <div class="f-text">
+          <h3>GEBÄUDEMANAGEMENT</h3>
+          <p>Unser Hausmeisterservice umfasst verschiedene Leistungen wie Kleinreparaturen, Überwachung der Haustechnik und vieles mehr. Wir sorgen für ein gepflegtes und einwandfreies Erscheinungsbild Ihrer Immobilie ganz egal ob Gewerbe oder Eigentümergemeinschaft.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="f-img">
+          <img src="feature-002.png" alt="Feature 2">
+        </div>
+        <div class="f-text">
+          <h3>GEBÄUDEREINIGUNG</h3>
+          <p>Wir reinigen zuverlässig Treppenhäuser, Eingangsbereiche, Gewerbeflächen und weitere Innenbereiche Ihrer Immobilie. Ob regelmäßige Unterhaltsreinigung oder bedarfsgerechte Einsätze – wir sorgen für Sauberkeit, Hygiene und Werterhalt. Hausboss steht für professionelle Reinigung mit klaren Abläufen und hoher Verlässlichkeit.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="f-img">
+          <img src="feature-003.png" alt="Feature 3">
+        </div>
+        <div class="f-text">
+          <h3>WINTERDIENST</h3>
+          <p>Wir übernehmen das Schneeräumen, Streuen und die Eisbeseitigung auf Gehwegen, Zufahrten und Parkflächen. Dabei halten wir uns an die örtlichen Vorschriften und sorgen für verkehrssichere Verhältnisse – pünktlich, gründlich und dokumentiert.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="f-img">
+          <img src="feature-004.png" alt="Feature 4">
+        </div>
+        <div class="f-text">
+          <h3>GRÜNPFLEGE</h3>
+          <p>Unsere Grünpflegeleistungen sorgen für einen gepflegten und professionellen Außenauftritt Ihrer Immobilie. Wir übernehmen regelmäßig das Rasenmähen, den Heckenschnitt sowie die Pflege von Grünflächen rund um Gewerbeobjekte, Wohnanlagen und Firmenareale – effizient, zuverlässig und termingerecht.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <H1 class="postfix">
+        INDIVIDUELLE LÖSUNGEN FÜR IHRE BEDÜRFNISSE AUF ANFRAGE
+      </H1>
+    </section>
+  </main>
+
+  <footer>
+    <div id="contact" class="contact">
+      <div>
+        <div>
+          <h2>KONTAKTIEREN SIE UNS NOCH HEUTE</h2>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div>
+          <pre>
+            HAUSBOSS GEBÄUDEDIENSTLEISTUNGEN
+    
+            Tel.:  +49 (0) 176 56881902
+        
+            E-Mail: E-Mail: info.hausboss@gmail.com(<a href="mailto:info.hausboss@gmail.com">Nachricht senden</a>)
+          </pre>
+        </div>
+        <div>
+          <pre>
+            Clara-Barton-Str. 7
+    
+            89231 Neu-Ulm
+          </pre>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="footer-links">
+      <a href="./datenschutz.html" class="modern-link">Datenschutz</a>
+      <a href="./impress.html" class="modern-link">Impressum</a>
+    </div>
+    <br>
+    <p>&copy; 2025 HausBoss GmbH. All rights reserved.</p>
+  </footer>
+
+  <style>
+  </style>
+
+  <script>
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navList = document.querySelector('.navigation ul');
+
+    burgerMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!burgerMenu.contains(event.target) && !navList.contains(event.target)) {
+      navList.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
